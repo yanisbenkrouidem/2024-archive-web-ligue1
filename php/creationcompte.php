@@ -4,13 +4,8 @@ session_start();
 $inscriptionMessage = "";
 $connexionMessage = "";
 
-// Connexion à la base de données InfinityFree
-try {
-    $bdd = new PDO("mysql:host=sql303.infinityfree.com;dbname=if0_38934862_bdfoot2benkrouidembelkhiri;charset=utf8", "if0_38934862", "8uU2PeGqEEa");
-    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (Exception $e) {
-    die("Erreur : " . $e->getMessage());
-}
+// Connexion à la base de données
+require_once __DIR__ . '/db.php';
 
 // Traitement de l'inscription
 if (isset($_POST["btninscrit"])) {

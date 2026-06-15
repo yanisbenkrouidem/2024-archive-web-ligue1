@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/db.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -274,8 +275,6 @@
             <select name="cbojour" id="cbojour">
                 <?php
                 try {
-                    $bdd = new PDO("mysql:host=sql303.infinityfree.com;dbname=if0_38934862_bdfoot2benkrouidembelkhiri;charset=utf8", "if0_38934862", "8uU2PeGqEEa");
-                    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                     $req = $bdd->prepare("SELECT idjournee FROM journee");
                     $req->execute();
                     $leslignes = $req->fetchAll();

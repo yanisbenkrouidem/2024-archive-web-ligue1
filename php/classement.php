@@ -1,16 +1,5 @@
 <?php
-// Connexion à la base de données
-$host = 'sql303.infinityfree.com';
-$dbname = 'bdfoot2benkrouidembelkhiri';
-$username = 'if0_38934862';
-$password = '8uU2PeGqEEa';
-
-try {
-    $bdd = new PDO("mysql:host=sql303.infinityfree.com;dbname=if0_38934862_bdfoot2benkrouidembelkhiri;charset=utf8", "if0_38934862", "8uU2PeGqEEa");
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Erreur de connexion : " . $e->getMessage());
-}
+require_once __DIR__ . '/db.php';
 ?>
 <!DOCTYPE html>
 <html>
