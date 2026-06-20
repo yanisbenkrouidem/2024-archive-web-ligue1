@@ -6,39 +6,40 @@
     <title>Ligue 1 McDonalds - Yanis Benkrouidem, Eyoub Belkhiri</title>
     <link rel="icon" type="image/jpg" href="assets/imgs/ligue1.jpg">
     <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
 
-    <header>
-        <div class="line"></div>
-        <div class="container header--area">
-            <div class="header--left">
-                <a href="/"><img src="assets/imgs/ligue1.jpg" alt="Ligue 1 Logo"></a>
+    <!-- New Unified Navbar -->
+    <header id="l1-navbar">
+        <div class="l1-nav-top">
+            <div class="l1-nav-top-left">
+                <div class="l1-hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+                <a href="index.html" class="l1-top-logo">LIGUE 1 MCDONALDS</a>
             </div>
-            <div class="header--right">
-                <div class="header--search">
-                    <form id="searchForm">
-                        <input type="text" id="searchInput" name="search" placeholder="Rechercher un match..."/>
-                        <button type="submit">
-                            <img src="assets/imgs/loupe.png" alt="Search icon"/>
-                        </button>
-                    </form>
-                </div>
-                <!-- Menu déroulant -->
-                <div class="header--menu">
-                    <input type="checkbox" id="menu-toggle">
-                    <label for="menu-toggle">
-                        <img src="assets/imgs/menu.png" alt="Menu icon">
-                    </label>
-                    <ul class="menu-list">
-                        <li><a href="accueil.html" aria-label="Accueil">Accueil</a></li>
-                        <li><a href="php/creationcompte.php" aria-label="Connexion">Connexion</a></li>
-                        <li><a href="php/classement.php" aria-label="Classement">Classement</a></li>
-                        <li><a href="php/resultatjournee.php" aria-label="Resultats">Resultats</a></li>                   
-                        <li><a href="html/en-direct.html" aria-label="En direct">En direct</a></li>
-                        <li><a href="html/calendrier.html" aria-label="Calendrier">Calendrier</a></li>
-                    </ul>
-                </div>
+            <div class="l1-nav-top-right">
+                <a href="php/creationcompte.php">REWARDS</a>
+                <a href="php/resultatjournee.php">ACTUALITÉS</a>
+                <span class="l1-divider">|</span>
+                <a href="#">FRANÇAIS</a>
+                <span class="l1-divider">|</span>
+                <a href="php/creationcompte.php">
+                    <svg class="l1-icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="l1-nav-bottom">
+            <a href="index.html" class="l1-bottom-logo">
+                <img src="assets/imgs/ligue1.jpg" alt="Ligue 1 Logo">
+            </a>
+            <div class="l1-nav-bottom-links">
+                <a href="index.html">Accueil</a>
+                <a href="php/resultatjournee.php">Matches</a>
+                <a href="php/classement.php">Classements</a>
+                <a href="html/en-direct.html">En Direct</a>
+                <a href="html/calendrier.html">Calendrier</a>
             </div>
         </div>
     </header>

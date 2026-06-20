@@ -7,9 +7,10 @@ require_once __DIR__ . '/db.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ligue 1 McDonalds</title>
+    <link rel="stylesheet" href="../css/navbar.css">
     <style type="text/css">
         * { padding: 0; margin: 0; box-sizing: border-box; }
-        header {
+        .hero-section {
             width: 100%;
             height: 100vh;
             background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url('assets/images/stade.jpg');
@@ -104,28 +105,47 @@ require_once __DIR__ . '/db.php';
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                Ligue 1
+    <!-- New Unified Navbar -->
+    <header id="l1-navbar">
+        <div class="l1-nav-top">
+            <div class="l1-nav-top-left">
+                <div class="l1-hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+                <a href="../index.html" class="l1-top-logo">LIGUE 1 MCDONALDS</a>
             </div>
-            <div class="menu">
-                <a href="#">Acceuil</a>
-                <a href="classement.php">Classement</a>
-                <a href="#">Actus</a>
-                <a href="resultatjournee.php">Journée</a>
-                <a href="#">Calendrier</a>
+            <div class="l1-nav-top-right">
+                <a href="creationcompte.php">REWARDS</a>
+                <a href="resultatjournee.php">ACTUALITÉS</a>
+                <span class="l1-divider">|</span>
+                <a href="#">FRANÇAIS</a>
+                <span class="l1-divider">|</span>
+                <a href="creationcompte.php">
+                    <svg class="l1-icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                </a>
             </div>
-            <div class="register">
-                <a href="#">Connexion</a>
+        </div>
+        <div class="l1-nav-bottom">
+            <a href="../index.html" class="l1-bottom-logo">
+                <img src="../assets/imgs/ligue1.jpg" alt="Ligue 1 Logo">
+            </a>
+            <div class="l1-nav-bottom-links">
+                <a href="../index.html">Accueil</a>
+                <a href="resultatjournee.php">Matches</a>
+                <a href="classement.php">Classements</a>
+                <a href="../html/en-direct.html">En Direct</a>
+                <a href="../html/calendrier.html">Calendrier</a>
             </div>
-        </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
         <section class="h-txt">
             <span>Ligue 1</span>
             <h1>Classement de la saison 2024-2025</h1>
             <br>
             <a href="saison.php">Voir le Classement</a>
         </section>
-    </header>
+    </section>
 </body>
 </html>

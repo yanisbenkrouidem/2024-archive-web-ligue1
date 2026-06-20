@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journées du Championnat</title>
+    <link rel="stylesheet" href="../css/navbar.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -265,6 +266,40 @@
     </style>
 </head>
 <body>
+
+    <!-- New Unified Navbar -->
+    <header id="l1-navbar">
+        <div class="l1-nav-top">
+            <div class="l1-nav-top-left">
+                <div class="l1-hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+                <a href="../index.html" class="l1-top-logo">LIGUE 1 MCDONALDS</a>
+            </div>
+            <div class="l1-nav-top-right">
+                <a href="creationcompte.php">REWARDS</a>
+                <a href="resultatjournee.php">ACTUALITÉS</a>
+                <span class="l1-divider">|</span>
+                <a href="#">FRANÇAIS</a>
+                <span class="l1-divider">|</span>
+                <a href="creationcompte.php">
+                    <svg class="l1-icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="l1-nav-bottom">
+            <a href="../index.html" class="l1-bottom-logo">
+                <img src="../assets/imgs/ligue1.jpg" alt="Ligue 1 Logo">
+            </a>
+            <div class="l1-nav-bottom-links">
+                <a href="../index.html">Accueil</a>
+                <a href="resultatjournee.php">Matches</a>
+                <a href="classement.php">Classements</a>
+                <a href="../html/en-direct.html">En Direct</a>
+                <a href="../html/calendrier.html">Calendrier</a>
+            </div>
+        </div>
+    </header>
 
 <div class="main-container">
     <!-- Formulaire de sélection de la journée -->
